@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Skráning</title>
+        <meta property="og:title" content="Spilabúðin">
+        <meta property="og:description" content="Kíktu á okkur á Spilagötu 1.">
+        <meta property="og:image" content="../myndir/sharing.jpg">
+        <meta name="description" content="Spilabúðin selur spil, heldur viðburði og býður upp á skemmtilega stund.">
+    </head>
+    <body>
+        <h1>Skráning</h1>
+        <a href="#maincontent">Beint í efni</a>
+        <ul>
+            <li><a href="../index.html">Forsíða Spilabúðarinnar</a></li>
+            <li><a href="spil.html">Spil</a></li>
+            <li><a href="vidburdir.html">Viðburðir</a></li>
+            <li><a href="skraning.html">Skráning á viðburði</a></li>
+        </ul>
+        <main id="#maincontent">
+            <h1>Skráning á viðburði</h1>
+            <p>Skráðu þig á viðburði hjá okkur!</p>
+            <form>
+                <label for="vidburdir">Hvaða viðburð viltu koma á?</label>
+                <input list="vidburdir">
+                <datalist id="vidburdir">
+                    <option value="vidburd a">
+                    <option value="vidburd b">
+                    <option value="vidburd c">
+                </datalist>
+                <label for="date">Hvenær?</label>
+                <input type="date">
+                <label for="time">Klukkan hvað?</label>
+                <input type="time" min="10:00" max="24:00">
+                <label for="fjoldi">Hve mörg?</label>
+                <input list="fjoldi">
+                <datalist id="fjoldi">
+                    <option value="1">
+                    <option value="2">
+                    <option value="3">
+                    <option value="4">
+                    <option value="5">
+                    <option value="6">
+                    <option value="7">
+                    <option value="8">
+                    <option value="9">
+                    <option value="10">
+                </datalist>
+                <label for="takaFram">Viltu taka eitthvað fram?</label>
+                <input id="takaFram" type="text">
+
+                <h2>Panta mat</h2>
+                <label for="matur">Viltu einhvern mat?</label>
+                <input list="matur">
+                <datalist id="matur">
+                    <option value="Pizzusneið og gos">
+                    <option value="Kaffi og kaka">
+                    <option value="Engan mat">
+                </datalist>
+                <label for="checkbox">Ofnæmi?</label>
+                <input type="checkbox">
+                <label for="annad">Annað sem við eigum að vita?</label>
+                <input type="text">
+
+                <h2>Þínar Upplýsingar</h2>
+                <label for="nafn">Nafn</label>
+                <input type="text" required id="nafn">
+                <label for="netfang">Netfang</label>
+                <input type="text" required id="netfang" placeholder="a@a.is">
+                <label for="simi">Sími</label>
+                <input type="text" required id="simi" placeholder="5812345">
+
+                <h2>Samþykkja og panta</h2>
+                <label for="skilmalar">Ég samþykki skilmála Spilabúðarinnar</label>
+                <input type="checkbox" id="skilmalar">
+                <label for="takki">Panta</label>
+                <input id="takki" type="submit">
+
+            </form>
+        </main>
+        <a href="../index.html">Aftur á forsíðu</a>
+    </body>
+    <footer>
+        <nav>
+            <section>
+                <h2>Opnunartími</h2>
+                <dl>
+                    <dt>Mánudagar</dt>
+                    <dd>Lokað</dd>
+                    <dt>Þriðjudagar til fimmtudags</dt>
+                    <dd>14:00–22:00</dd>
+                    <dt>Föstudaga</dt>
+                    <dd>14:00–00:00</dd>
+                    <dt>Laugardaga</dt>
+                    <dd>12:00–00:00</dd>
+                    <dt>Sunnudaga</dt>
+                    <dd>12:00–22:00</dd>
+                </dl>
+
+                <h2>Hér erum við</h2>
+                <p>
+                    Spilabúðin ehf.
+                    Spilgata 1
+                    101 Reykjavík
+                    Sími 123-4567
+                    spilabudin@example.org
+                </p>
+
+                <h2>Samfélagsmiðlar</h2>
+                <a href="https://www.facebook.com/HaskoliIslands/">Facebook</a>
+                <a href="https://www.youtube.com/user/HIvarp">Youtube</a>
+                <a href="https://www.instagram.com/haskoli_islands/">Instagram</a>
+            </section>
+        </nav>
+    </footer>
+</html>
