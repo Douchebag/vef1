@@ -48,10 +48,6 @@ html {
     url("fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf");
 }
 
-@font-face {
-  /* TODO Bæta við leturgerð */
-}
-
 /*** Allt meginmál notar open sans ***/
 html,
 input,
@@ -118,7 +114,6 @@ section, img, form {
 /** Haus á síðum **/
 
 header {
-  /* TODO Skilgreina */
   background-color: #cc99bb;
   text-align: center;
   padding: 1rem;
@@ -128,7 +123,6 @@ header {
 /** Valmynd **/
 
 nav {
-  /* TODO Skilgreina */
   background-color: #eebbdd;
   padding: 1rem;
   
@@ -159,7 +153,6 @@ nav ul li:last-child {
 /** Meginmál og efni forsíðu **/
 
 main {
-  /* TODO Skilgreina */
   padding: 1rem;
   display: flex;
   max-width: 900px;
@@ -185,7 +178,6 @@ main img {
 /** Fótur **/
 
 footer {
-  /* TODO Skilgreina */
   background-color: #eebbdd;
   padding: 1rem;
   text-align: center;
@@ -237,7 +229,6 @@ tr:nth-child(even) {
 th {
   padding: 0.5rem;
   text-align: left;
-  
 }
 
 td {
@@ -334,8 +325,3 @@ input[type="submit"] {
 fieldset {
   border: none;
 }
-
-
-
-
-/* TODO Skilgreina */
