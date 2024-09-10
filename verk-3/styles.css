@@ -39,13 +39,13 @@ html {
 @font-face {
   font-family: "Matemasie";
   src: 
-    url("/fonts/Matemasie/Matemasie-Regular.ttf");
+    url("fonts/Matemasie/Matemasie-Regular.ttf");
 }
 
 @font-face {
   font-family: "Open Sans";
   src: 
-    url("/fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf");
+    url("fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf");
 }
 
 @font-face {
