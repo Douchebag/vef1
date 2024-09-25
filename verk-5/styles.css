@@ -245,12 +245,27 @@ nav ul {
   list-style: none;
 }
 
-@media screen and (min-width: 800px) {
+@media (min-width: 800px) {
   nav ul li {
     display: block;
+    width: 100%;
   }
   nav {
-    text-wrap: nowrap;
+    text-wrap: wrap;
+    width: 100%;
+    justify-content: left;
+  }
+  nav ul {
+    justify-content: left;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  nav ul li {
+    display: inline;
+    margin-right: var(--spacing);
+    width: 100%;
   }
 }
 
@@ -294,7 +309,8 @@ main {
 }
 
 .box-wrapper {
-  gap: var(--spacing)
+  gap: var(--gutter);
+  width: 100%;
 }
 
 .boxes {
@@ -596,6 +612,7 @@ button {
 @media (min-width: 500px) {
   .efsta-box .box-efni {
     display: flex;
+    gap: var(--gutter);
   }
   .box-efni .efsti-texti {
     width: 50%;
