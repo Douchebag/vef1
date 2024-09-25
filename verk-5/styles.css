@@ -183,6 +183,7 @@ html {
 @media (min-width: 800px) {
   .wrapper {
     gap: var(--vertical-space-large);
+    grid-template-rows: calc(53px + var(--gutter)) auto auto;
   }
 }
 
@@ -237,7 +238,7 @@ nav ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: var(--spacing);
+  gap: calc(var(--spacing) / 2);
 
   width: 100%;
   max-width: var(--width-offset);
@@ -254,6 +255,7 @@ nav ul {
     text-wrap: wrap;
     width: 100%;
     justify-content: left;
+    flex: 1;
   }
   nav ul {
     justify-content: left;
@@ -264,7 +266,7 @@ nav ul {
 @media (min-width: 1200px) {
   nav ul li {
     display: inline;
-    margin-right: var(--spacing);
+    margin-right: 0;
     width: 100%;
   }
 }
@@ -618,6 +620,22 @@ button {
     width: 50%;
   }
   .efsta-box img {
-    width: 56%;
+    width: 45%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .efsta-box .box-efni {
+    display: grid;
+    gap: var(--gutter);
+    grid-template-columns: repeat(var(--columns), 1fr);
+  }
+  .efsta-box .box-efni .efsti-texti {
+    grid-column: span 6;
+    width: 100%;
+  }
+  .efsta-box .box-efni img {
+    grid-column: span 6;
+    width: 100%;
   }
 }
