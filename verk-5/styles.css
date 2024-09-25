@@ -180,9 +180,9 @@ html {
   background-color: var(--color-background-primary);
 }
 
-@media (min-width: 800px) {
+@media (min-width: 426px) {
   .wrapper {
-    gap: var(--vertical-space-large);
+    
     grid-template-rows: calc(53px + var(--gutter)) auto auto;
   }
 }
@@ -199,7 +199,7 @@ og síðan wrapper fyrir nav og main til að stýra hvernig þau element taka pl
   margin-bottom: var(--spacing);
 }
 
-@media(min-width: 800px) {
+@media(min-width: 850px) {
   .efni-wrapper {
     display: grid;
     grid-template-columns: repeat(var(--columns), 1fr);
@@ -246,7 +246,7 @@ nav ul {
   list-style: none;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 850px) {
   nav ul li {
     display: block;
     width: 100%;
@@ -298,7 +298,7 @@ main {
   box-sizing: content-box;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 750px) {
   main {
     grid-column: span 10;
   }
