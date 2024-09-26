@@ -280,8 +280,6 @@ nav ul li {
 
 /** Meginmál og efni forsíðu **/
 
-/* TODO nota úr sýnilausn eða þinni lausn, ætti að einfaldast */
-
 /**
  * notum þetta til að fá bil á milli eininga _almennt_
  * en ekki að hver eining þurfi að huga að bili
@@ -340,59 +338,6 @@ main {
 
 /*** Inngangsefni á forsíðu ***/
 
-/* TODO nota úr sýnilausn eða þinni lausn, hér þarf að aðlaga,
-hugsanlega setja nýjan flex container utan um bæði þetta og .cards */
-
-/** Cards **/
-
-.cards {
-  display: grid;
-  grid-template-rows: auto;
-  gap: var(--vertical-space);
-  justify-items: center;
-
-  width: 100%;
-}
-
-.cards > .title {
-  width: 100%;
-  text-align: center;
-}
-
-.cards > .content {
-  display: grid;
-  grid-template-rows: auto;
-  gap: var(--vertical-space);
-  justify-items: center;
-
-  width: 100%;
-}
-
-/* TODO skilgreinda brotpunkt fyrir .cards .content */
-@media (min-width: 99999px) {
-  /* TODO hvaða stílar ættu að vera hér? */
-}
-
-
-/** Card **/
-
-.card {
-  display: flex;
-  flex-direction: column;
-
-  /* hér verðum við að reikna út breidd svo að flex-wrap virki */
-  width: calc(50% - var(--spacing));
-}
-
-/* TODO skilgreinda brotpunkt fyrir .card */
-@media (min-width: 99999px) {
-  /* TODO hvaða stílar ættu að vera hér? */
-}
-
-.card > .image {
-  width: 100%;
-}
-
 .covers {
   display: block;
 
@@ -402,32 +347,6 @@ hugsanlega setja nýjan flex container utan um bæði þetta og .cards */
   height: 300px;
   object-fit: cover;
   object-position: 50% 50%;
-}
-
-/**
- * notum nýja selectora! brotið niður
- * .card            <- veljum öll .card
- * :not(            <- nema, við viljum ef _ekki_...
- *   :has(> .image) <- .image sem strangt barn .card
- * )                <- endir á :not()
- * > .content       <- sem er strax barn af .card
- * Þ.e.a.s. fyrir .card sem hefur ekki .image, setja border + radíus á allt .content
- */
-.card:not(:has(> .image)) > .content {
-  border: var(--border-regular);
-  border-radius: var(--border-radius-regular);
-}
-
-.card > .content > .text {
-  flex: 1;
-}
-
-.card > .content > .actions {
-  display: flex;
-  justify-content: space-between;
-  gap: var(--spacing);
-
-  margin-top: var(--spacing);
 }
 
 /** Fótur **/
@@ -516,10 +435,6 @@ table td:last-child {
 .table-container {
   overflow-x: auto;
 }
-
-/** Viðburðir **/
-
-/* TODO nota úr sýnilausn eða þinni lausn, ætti að einfaldast með því að endurnýta .cards og .card */
 
 /** Skráningarform **/
 
